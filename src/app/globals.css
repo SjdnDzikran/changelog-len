@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #E95F37;
+  --nav-height: 64px;
+  --date-top-offset: 80px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-outfit);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Markdown prose styles for changelog descriptions */
+.changelog-prose {
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+@media (min-width: 768px) {
+  .changelog-prose {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
+
+.changelog-prose p {
+  margin-bottom: 0.75em;
+}
+
+.changelog-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.changelog-prose strong {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+.changelog-prose em {
+  font-style: italic;
+}
+
+.changelog-prose ul,
+.changelog-prose ol {
+  margin: 0.75em 0;
+  padding-left: 1.5em;
+}
+
+.changelog-prose ul {
+  list-style-type: disc;
+}
+
+.changelog-prose ol {
+  list-style-type: decimal;
+}
+
+.changelog-prose li {
+  margin-bottom: 0.35em;
+}
+
+.changelog-prose code {
+  font-size: 0.875em;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.06);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+.changelog-prose pre {
+  margin: 0.75em 0;
+  padding: 1em;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+.changelog-prose pre code {
+  padding: 0;
+  background: none;
+  font-size: 0.875em;
+}
+
+.changelog-prose a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.changelog-prose blockquote {
+  border-left: 3px solid var(--border);
+  padding-left: 1em;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0.75em 0;
+}
+
+.changelog-prose h3,
+.changelog-prose h4 {
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+.changelog-prose h3 {
+  font-size: 1.125em;
+}
+
+.changelog-prose h4 {
+  font-size: 1em;
+}
+
+.changelog-prose table {
+  width: 100%;
+  margin: 0.75em 0;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.changelog-prose th,
+.changelog-prose td {
+  text-align: left;
+  padding: 0.5em 0.75em;
+  border-bottom: 1px solid var(--border);
+}
+
+.changelog-prose th {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+.changelog-prose hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1em 0;
+}
+
+.changelog-prose img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 0.75em 0;
+}
