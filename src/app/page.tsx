@@ -117,7 +117,7 @@ export default function ChangelogPage() {
       <Navbar />
 
       {/* Hero */}
-      <header className="px-4 md:px-0 pt-10 md:pt-[60px] pb-10 md:pb-12 text-center md:text-left">
+      <header className="px-4 lg:px-0 pt-10 md:pt-[60px] pb-10 md:pb-12 text-center md:text-left">
         <div className="max-w-[1024px] mx-auto">
           <h1 className="text-4xl md:text-[64px] font-bold text-black/95 leading-tight">
             What&apos;s New
@@ -138,7 +138,7 @@ export default function ChangelogPage() {
         </div>
       ) : (
         <main className="pb-24">
-          <div className="max-w-[1024px] mx-auto px-4 md:px-0">
+          <div className="max-w-[1024px] mx-auto px-4 lg:px-0">
             {/* Divider between hero and first entry */}
             <hr className="border-gray-200 mb-8" />
             {days.map((day, dayIndex) => (
@@ -157,7 +157,7 @@ export default function ChangelogPage() {
 
       {/* Footer */}
       <footer className="border-t border-gray-100 py-8">
-        <div className="max-w-[1024px] mx-auto px-4 md:px-0 text-center text-sm text-gray-400">
+        <div className="max-w-[1024px] mx-auto px-4 lg:px-0 text-center text-sm text-gray-400">
           © {new Date().getFullYear()} LEN Logistics. All rights reserved.
         </div>
       </footer>
