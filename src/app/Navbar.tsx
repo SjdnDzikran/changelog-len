@@ -73,7 +73,7 @@ export default function Navbar() {
             <img
               src="/logo.jpg"
               alt="LEN Logistics"
-              className="h-8 w-8 rounded"
+              className="h-8 w-auto rounded"
             />
             <span className="text-xl font-bold text-black">LEN Logistics</span>
             <span className="text-gray-400 text-sm hidden sm:inline">/ Changelog</span>
