@@ -3,10 +3,10 @@
 import { useState, useEffect, useCallback } from "react";
 
 const NAV_LINKS = [
-  { label: "TMS", href: "#" },
-  { label: "WMS", href: "#" },
-  { label: "Approval", href: "#" },
-  { label: "Profile", href: "#" },
+  { label: "TMS", href: "https://oms.lenlogistics.co.id" },
+  { label: "WMS", href: "https://wms.lenlogistics.co.id" },
+  { label: "Approval", href: "https://approval.lenlogistics.co.id" },
+  { label: "Profile", href: "https://lenlogistics.co.id" },
 ];
 
 function HamburgerIcon({ open }: { open: boolean }) {
