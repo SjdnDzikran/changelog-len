@@ -113,7 +113,7 @@ export default function ChangelogPage() {
   const days = getAllPublishedDays();
 
   return (
-    <div className="min-h-screen">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
 
       {/* Hero */}
@@ -129,6 +129,7 @@ export default function ChangelogPage() {
       </header>
 
       {/* Releases */}
+      <div className="flex-1">
       {days.length === 0 ? (
         <div className="flex items-center justify-center pb-24">
           <p className="text-gray-500 text-base">
@@ -152,6 +153,7 @@ export default function ChangelogPage() {
           </div>
         </main>
       )}
+      </div>
 
       {/* Footer */}
       <footer className="border-t border-gray-100 py-8">
