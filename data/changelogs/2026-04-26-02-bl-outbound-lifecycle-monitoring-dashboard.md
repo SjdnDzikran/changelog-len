@@ -4,6 +4,7 @@ title: "BL Outbound Lifecycle Monitoring Dashboard"
 repo: len-approval-ui
 product:
   - web
+image: "/changelog/bl-outbound-lifecycle-dashboard.jpg"
 ---
 
 - Added a new **Monitoring** section in the navigation menu with a list view and detail page for tracking BL outbound form lifecycles.
