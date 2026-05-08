@@ -87,13 +87,8 @@ function ReleaseRow({ day }: { day: ChangelogDayType }) {
             <h2 className="text-2xl md:text-[42px] font-bold leading-tight md:leading-[48px] text-black/95 mb-3">
               {entry.title}
             </h2>
-            <div className="changelog-prose">
-              <Markdown remarkPlugins={[remarkGfm]}>
-                {entry.description}
-              </Markdown>
-            </div>
             {entry.imageUrl && (
-              <div className="mt-5 md:mt-6 rounded-lg overflow-hidden">
+              <div className="mt-4 mb-5 md:mt-5 md:mb-6 rounded-lg overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={entry.imageUrl}
@@ -102,6 +97,11 @@ function ReleaseRow({ day }: { day: ChangelogDayType }) {
                 />
               </div>
             )}
+            <div className="changelog-prose">
+              <Markdown remarkPlugins={[remarkGfm]}>
+                {entry.description}
+              </Markdown>
+            </div>
           </div>
         ))}
       </div>
