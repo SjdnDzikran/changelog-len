@@ -27,27 +27,20 @@ function DayDiffStats({ day }: { day: ChangelogDayType }) {
 
   if (total === 0) return null;
 
-  // GitHub-style: 5 blocks — proportional green/red, flip when deletions > additions
-  const isDeletionHeavy = totalDeletions > totalAdditions;
-  const primaryCount = isDeletionHeavy
-    ? Math.round((totalDeletions / total) * 5)
-    : Math.round((totalAdditions / total) * 5);
-  const hasSecondary = isDeletionHeavy ? totalAdditions > 0 : totalDeletions > 0;
-  const neutralCount = Math.max(0, 5 - primaryCount - (hasSecondary ? 1 : 0));
+  // 5 blocks — proportional green/red, no neutral
+  const greenCount = Math.round((totalAdditions / total) * 5);
+  const redCount = 5 - greenCount;
 
   return (
     <div className="flex items-center gap-2 text-xs text-black/50 mt-1">
       <span className="font-medium" style={{ color: "rgb(31, 136, 61)" }}>+{formatNumber(totalAdditions)}</span>
       <span className="font-medium" style={{ color: "rgb(207, 34, 46)" }}>−{formatNumber(totalDeletions)}</span>
       <span className="inline-flex" aria-hidden="true">
-        {Array.from({ length: primaryCount }).map((_, i) => (
-          <span key={isDeletionHeavy ? `r${i}` : `g${i}`} className="inline-block" style={{ width: 8, height: 8, backgroundColor: isDeletionHeavy ? "rgb(207, 34, 46)" : "rgb(31, 136, 61)", marginLeft: 1, borderRadius: 2 }} />
+        {Array.from({ length: greenCount }).map((_, i) => (
+          <span key={`g${i}`} className="inline-block" style={{ width: 8, height: 8, backgroundColor: "rgb(31, 136, 61)", marginLeft: 1, borderRadius: 2 }} />
         ))}
-        {hasSecondary && (
-          <span className="inline-block" style={{ width: 8, height: 8, backgroundColor: isDeletionHeavy ? "rgb(31, 136, 61)" : "rgb(207, 34, 46)", marginLeft: 1, borderRadius: 2 }} />
-        )}
-        {Array.from({ length: neutralCount }).map((_, i) => (
-          <span key={`n${i}`} className="inline-block" style={{ width: 8, height: 8, backgroundColor: "rgba(129, 139, 152, 0.12)", marginLeft: 1, borderRadius: 2 }} />
+        {Array.from({ length: redCount }).map((_, i) => (
+          <span key={`r${i}`} className="inline-block" style={{ width: 8, height: 8, backgroundColor: "rgb(207, 34, 46)", marginLeft: 1, borderRadius: 2 }} />
         ))}
       </span>
     </div>
