@@ -27,25 +27,31 @@ function DayDiffStats({ day }: { day: ChangelogDayType }) {
 
   if (total === 0) return null;
 
-  const additionsPercent = total > 0 ? (totalAdditions / total) * 100 : 50;
-  const deletionsPercent = total > 0 ? (totalDeletions / total) * 100 : 50;
+  const additionsPercent = (totalAdditions / total) * 100;
+  const totalPercent = additionsPercent + ((totalDeletions / total) * 100);
+  const greenCount = Math.round((additionsPercent / totalPercent) * 5);
+  const redCount = 5 - greenCount;
 
   return (
     <div className="flex items-center gap-2 text-xs text-black/50 mt-1">
-      <span className="text-green-600 font-medium">+{formatNumber(totalAdditions)}</span>
-      <span className="text-red-500 font-medium">-{formatNumber(totalDeletions)}</span>
-      <div className="flex gap-0.5">
-        {Array.from({ length: 5 }).map((_, i) => {
-          const threshold = ((i + 1) / 5) * 100;
-          const isGreen = threshold <= additionsPercent;
-          return (
-            <div
-              key={i}
-              className={`h-2 w-2 rounded-sm ${isGreen ? "bg-green-500" : "bg-red-400"}`}
-            />
-          );
-        })}
-      </div>
+      <span className="font-medium" style={{ color: "rgb(31, 136, 61)" }}>+{formatNumber(totalAdditions)}</span>
+      <span className="font-medium" style={{ color: "rgb(207, 34, 46)" }}>−{formatNumber(totalDeletions)}</span>
+      <span className="inline-flex" aria-hidden="true">
+        {Array.from({ length: greenCount }).map((_, i) => (
+          <span
+            key={`g${i}`}
+            className="inline-block"
+            style={{ width: 8, height: 8, backgroundColor: "rgb(31, 136, 61)", marginLeft: 1 }}
+          />
+        ))}
+        {Array.from({ length: redCount }).map((_, i) => (
+          <span
+            key={`r${i}`}
+            className="inline-block"
+            style={{ width: 8, height: 8, backgroundColor: "rgba(129, 139, 152, 0.12)", marginLeft: 1 }}
+          />
+        ))}
+      </span>
     </div>
   );
 }
