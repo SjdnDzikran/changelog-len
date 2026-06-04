@@ -27,9 +27,25 @@ function DayDiffStats({ day }: { day: ChangelogDayType }) {
 
   if (total === 0) return null;
 
-  // 5 blocks — proportional green/red, no neutral
-  const greenCount = Math.round((totalAdditions / total) * 5);
-  const redCount = 5 - greenCount;
+  // 5 blocks: proportional primary color, 1 slot for secondary (only if >15%), rest neutral
+  let greenCount: number, redCount: number, neutralCount: number;
+
+  if (totalDeletions > totalAdditions) {
+    // Deletion-heavy: proportional red, 1 green if additions > 15%, rest neutral
+    redCount = Math.round(4 * (totalDeletions / total));
+    greenCount = (totalAdditions / total) >= 0.15 ? 1 : 0;
+    neutralCount = 5 - redCount - greenCount;
+  } else if (totalDeletions === 0) {
+    // Additions only: proportional green, rest neutral
+    greenCount = Math.min(5, Math.round(5 * (totalAdditions / total)));
+    redCount = 0;
+    neutralCount = 5 - greenCount;
+  } else {
+    // Normal: proportional green (out of 4 slots), 1 red if deletions > 15%, rest neutral
+    greenCount = Math.round(4 * (totalAdditions / total));
+    redCount = (totalDeletions / total) >= 0.15 ? 1 : 0;
+    neutralCount = 5 - greenCount - redCount;
+  }
 
   return (
     <div className="flex items-center gap-2 text-xs text-black/50 mt-1">
@@ -41,6 +57,9 @@ function DayDiffStats({ day }: { day: ChangelogDayType }) {
         ))}
         {Array.from({ length: redCount }).map((_, i) => (
           <span key={`r${i}`} className="inline-block" style={{ width: 8, height: 8, backgroundColor: "rgb(207, 34, 46)", marginLeft: 1, borderRadius: 2 }} />
+        ))}
+        {Array.from({ length: neutralCount }).map((_, i) => (
+          <span key={`n${i}`} className="inline-block" style={{ width: 8, height: 8, backgroundColor: "rgba(129, 139, 152, 0.12)", marginLeft: 1, borderRadius: 2 }} />
         ))}
       </span>
     </div>
