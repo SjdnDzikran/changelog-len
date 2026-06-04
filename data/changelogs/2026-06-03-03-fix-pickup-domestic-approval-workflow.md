@@ -4,6 +4,8 @@ title: "Fix Pickup Domestic approval workflow and notifications"
 repo: len-approval-api
 product:
   - backend
+additions: 175
+deletions: 73
 ---
 
 Pickup Domestic Delivery forms were missing from the approval queue, meaning approvers could not see or act on them from the main dashboard. This also fixes approval notifications to link directly to the review page and personalize the greeting.

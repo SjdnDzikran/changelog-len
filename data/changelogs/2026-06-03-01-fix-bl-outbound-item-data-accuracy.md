@@ -4,6 +4,8 @@ title: "Fix BL Outbound item data accuracy for warehouse operations"
 repo: api-wms
 product:
   - backend
+additions: 111
+deletions: 28
 ---
 
 Sub-location detail and plan source values are now correctly saved when creating or editing outbound items, preventing "stock not found" errors during goods issue processing. Previously, the system was silently clearing the exact warehouse sub-location on every save, causing downstream validation to fail when operators tried to release goods.

@@ -4,6 +4,8 @@ title: "Add form type badges to dashboard tables"
 repo: len-approval-ui
 product:
   - web
+additions: 137
+deletions: 19
 ---
 
 The Recent Forms and Pending Approvals tables on the dashboard now display a colored badge for each form type, making it easy to distinguish between BL, MRN, MRF, Pickup Domestic, and other form categories at a glance without reading the form number.

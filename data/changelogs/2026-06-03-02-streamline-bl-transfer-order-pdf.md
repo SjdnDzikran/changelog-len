@@ -4,6 +4,8 @@ title: "Streamline BL Transfer Order PDF layout"
 repo: api-wms
 product:
   - backend
+additions: 10
+deletions: 8
 ---
 
 Removed the transport mode column from the BL Transfer Order PDF, giving Part Number and Description columns more horizontal space. The Moda field is only needed on the Goods Delivery Note for external partners, not on the internal warehouse picking list.

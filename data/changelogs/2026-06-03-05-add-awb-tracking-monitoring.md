@@ -4,6 +4,8 @@ title: "Add AWB tracking and monitoring from TMS"
 repo: len-approval-api
 product:
   - backend
+additions: 229
+deletions: 13
 ---
 
 New monitoring capabilities let users look up any AWB number to see its full shipping status and event history pulled directly from TMS. A companion paginated list shows all synced AWBs with filters for date, transport mode, and status, so operations teams can track shipments without switching to the TMS system.

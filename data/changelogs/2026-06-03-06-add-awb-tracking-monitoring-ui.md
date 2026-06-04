@@ -4,6 +4,8 @@ title: "Add AWB tracking and monitoring pages"
 repo: len-approval-ui
 product:
   - web
+additions: 906
+deletions: 227
 ---
 
 A new AWB Tracking page in the Monitoring section lets operations staff browse, filter, and drill into individual shipment statuses without leaving the Approval app. Clicking any row opens a detail popup with the full event timeline.

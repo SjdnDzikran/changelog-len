@@ -4,6 +4,8 @@ title: "Fix LEN First form Excel validation"
 repo: len-approval-api
 product:
   - backend
+additions: 14
+deletions: 10
 ---
 
 Excel uploads for LEN First workflows no longer incorrectly reject rows that are missing Origin or Moda values. In the LEN First process, those fields are intentionally left blank because the CJ operations team fills them in during a later step. The system was previously blocking these uploads with validation errors.
