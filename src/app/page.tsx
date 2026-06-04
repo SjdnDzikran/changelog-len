@@ -32,17 +32,19 @@ function DayDiffStats({ day }: { day: ChangelogDayType }) {
 
   return (
     <div className="flex items-center gap-2 text-xs text-black/50 mt-1">
-      <span className="text-[#1a7f37] font-medium">+{formatNumber(totalAdditions)}</span>
-      <span className="text-[#cf222e] font-medium">-{formatNumber(totalDeletions)}</span>
-      <div className="h-2 w-16 rounded-full overflow-hidden bg-gray-200 flex">
-        <div
-          className="h-full bg-[#1a7f37]"
-          style={{ width: `${additionsPercent}%` }}
-        />
-        <div
-          className="h-full bg-[#cf222e]"
-          style={{ width: `${deletionsPercent}%` }}
-        />
+      <span className="text-green-600 font-medium">+{formatNumber(totalAdditions)}</span>
+      <span className="text-red-500 font-medium">-{formatNumber(totalDeletions)}</span>
+      <div className="flex gap-0.5">
+        {Array.from({ length: 5 }).map((_, i) => {
+          const threshold = ((i + 1) / 5) * 100;
+          const isGreen = threshold <= additionsPercent;
+          return (
+            <div
+              key={i}
+              className={`h-2 w-2 rounded-sm ${isGreen ? "bg-green-500" : "bg-red-400"}`}
+            />
+          );
+        })}
       </div>
     </div>
   );
