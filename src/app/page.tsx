@@ -27,10 +27,9 @@ function DayDiffStats({ day }: { day: ChangelogDayType }) {
 
   if (total === 0) return null;
 
-  const additionsPercent = (totalAdditions / total) * 100;
-  const totalPercent = additionsPercent + ((totalDeletions / total) * 100);
-  const greenCount = Math.round((additionsPercent / totalPercent) * 5);
-  const redCount = 5 - greenCount;
+  const greenCount = Math.round((totalAdditions / total) * 5);
+  const hasDeletions = totalDeletions > 0;
+  const neutralCount = Math.max(0, 5 - greenCount - (hasDeletions ? 1 : 0));
 
   return (
     <div className="flex items-center gap-2 text-xs text-black/50 mt-1">
@@ -44,9 +43,15 @@ function DayDiffStats({ day }: { day: ChangelogDayType }) {
             style={{ width: 8, height: 8, backgroundColor: "rgb(31, 136, 61)", marginLeft: 1, borderRadius: 2 }}
           />
         ))}
-        {Array.from({ length: redCount }).map((_, i) => (
+        {hasDeletions && (
           <span
-            key={`r${i}`}
+            className="inline-block"
+            style={{ width: 8, height: 8, backgroundColor: "rgb(207, 34, 46)", marginLeft: 1, borderRadius: 2 }}
+          />
+        )}
+        {Array.from({ length: neutralCount }).map((_, i) => (
+          <span
+            key={`n${i}`}
             className="inline-block"
             style={{ width: 8, height: 8, backgroundColor: "rgba(129, 139, 152, 0.12)", marginLeft: 1, borderRadius: 2 }}
           />
