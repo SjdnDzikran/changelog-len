@@ -5,6 +5,8 @@ repo: erp-len-ui
 product:
   - web
 image: "/changelog/cms-activities-management.jpg"
+deletions: 12
+additions: 1272
 ---
 
 Added a full activities management section to the CMS admin panel. Admins can create, edit, view, publish, and unpublish activities with image uploads. Features include:

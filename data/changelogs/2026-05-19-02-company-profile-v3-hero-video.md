@@ -4,6 +4,8 @@ title: "Refresh company profile presentation and homepage video"
 repo: len-react
 product:
   - web
+deletions: 33
+additions: 25
 ---
 
 - **Updated company profile slides:** The presentation carousel on the company story page now displays the latest version of the company profile deck with refreshed content

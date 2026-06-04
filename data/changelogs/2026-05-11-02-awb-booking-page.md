@@ -4,6 +4,8 @@ title: "Add AWB number booking page with range and Excel upload modes"
 repo: erp-len-ui
 product:
   - web
+deletions: 73
+additions: 583
 ---
 
 A new **Booking AWB** page gives users a streamlined interface to reserve AWB numbers in bulk.

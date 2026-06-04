@@ -4,6 +4,8 @@ title: "Add packaging content management with draft and publish workflow"
 repo: erp-len-api
 product:
   - backend
+deletions: 0
+additions: 1854
 ---
 
 - **New Packaging CMS module:** Admins can create, edit, and delete packaging entries with a title (up to 100 characters), a short description (up to 255 characters), and one uploaded image

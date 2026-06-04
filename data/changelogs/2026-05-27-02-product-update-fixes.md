@@ -2,6 +2,8 @@
 date: "2026-05-27"
 title: "Fix product data loss and errors when updating master products"
 repo: erp-len-api
+additions: 39
+deletions: 17
 product:
   - backend
 ---

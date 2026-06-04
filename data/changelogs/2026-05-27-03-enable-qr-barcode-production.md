@@ -2,6 +2,8 @@
 date: "2026-05-27"
 title: "Enable QR code and barcode generation on production server"
 repo: erp-len-api
+additions: 13
+deletions: 0
 product:
   - backend
 ---

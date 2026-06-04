@@ -4,6 +4,8 @@ title: "Update homepage headline and refine site typography"
 repo: len-react
 product:
   - web
+deletions: 108
+additions: 110
 ---
 
 The LEN Logistics public profile website now carries updated branding on the homepage with improved text readability.

@@ -2,6 +2,8 @@
 date: "2026-05-13"
 title: "Show clear error messages when BL form submission fails"
 repo: len-approval-api
+additions: 35
+deletions: 5
 product:
   - backend
 ---

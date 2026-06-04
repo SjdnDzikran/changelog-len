@@ -2,6 +2,8 @@
 date: "2026-06-02"
 title: "Show approver real name in WhatsApp approval notifications"
 repo: len-approval-api
+additions: 27
+deletions: 13
 product:
   - backend
 ---

@@ -2,6 +2,8 @@
 date: "2026-05-27"
 title: "Paginated audit logs with search, filters, and visual diff view"
 repo: erp-len-ui
+additions: 488
+deletions: 269
 product:
   - backend
   - web

@@ -2,6 +2,8 @@
 date: "2026-05-29"
 title: "Strengthen BL Inbound data entry validation and error handling"
 repo: len-approval-api
+additions: 49
+deletions: 10
 product:
   - backend
   - web

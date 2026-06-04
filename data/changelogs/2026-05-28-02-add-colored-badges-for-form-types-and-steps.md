@@ -2,6 +2,8 @@
 date: "2026-05-28"
 title: "Add colored badges for form types and approval steps"
 repo: len-approval-ui
+additions: 400
+deletions: 64
 product:
   - web
 ---

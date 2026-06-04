@@ -4,6 +4,8 @@ title: "Fix table layout on Articles and Activities CMS pages"
 repo: erp-len-ui
 product:
   - web
+deletions: 6
+additions: 6
 ---
 
 - **Full-width tables:** The Articles and Activities CMS pages now display their tables at full screen width instead of being constrained to a narrow container

@@ -4,6 +4,8 @@ title: "AWB list filters are now preserved when returning from detail, edit, or 
 repo: erp-len-ui
 product:
   - web
+deletions: 26
+additions: 194
 ---
 
 Users who filter the AWB list (by search keyword, status, date range, period, or customer) will no longer lose their filters when they open a record and navigate back. Previously, clicking the back button from any AWB detail, edit, or request-edit page would reset all filters, forcing users to re-enter them every time.

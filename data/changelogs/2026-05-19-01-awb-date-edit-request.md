@@ -5,6 +5,8 @@ repo: erp-len-api
 product:
   - backend
   - web
+deletions: 1
+additions: 8
 ---
 
 - **New editable field:** The AWB date (Tanggal AWB) can now be changed through the AWB Edit Request workflow, which was previously locked as read-only

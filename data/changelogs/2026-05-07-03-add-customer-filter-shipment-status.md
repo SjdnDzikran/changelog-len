@@ -4,6 +4,8 @@ title: "Filter shipment status by customer"
 repo: erp-len-ui
 product:
   - web
+deletions: 10
+additions: 76
 ---
 
 The shipment status page now has a **searchable customer dropdown**, letting users narrow results to a specific customer without having to scroll through the full list.

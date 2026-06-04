@@ -4,6 +4,8 @@ title: "BL Outbound Lifecycle Monitoring API"
 repo: len-approval-api
 product:
   - backend
+deletions: 213
+additions: 818
 ---
 
 - Added new `MonitoringController` with a `GET /api/monitoring/bl-outbound/lifecycle` endpoint that returns a paginated list of BL outbound forms with lifecycle summaries per moda (Booking, AWB, Manifest, DRS status at a glance).

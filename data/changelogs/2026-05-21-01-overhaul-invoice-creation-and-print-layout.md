@@ -5,6 +5,8 @@ repo: erp-len-api
 product:
   - backend
   - web
+deletions: 64
+additions: 210
 ---
 
 - **Manual invoice numbering:** Admins can type a custom invoice number or leave the field blank for auto-generation. Duplicate numbers are rejected automatically so no two invoices ever share the same reference.

@@ -2,6 +2,8 @@
 date: "2026-06-02"
 title: "Pickup Domestic creation, viewing, and final approval editing interface"
 repo: len-approval-ui
+additions: 206
+deletions: 68
 product:
   - web
 ---

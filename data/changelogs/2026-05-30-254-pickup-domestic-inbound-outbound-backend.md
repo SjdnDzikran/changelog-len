@@ -2,6 +2,8 @@
 date: "2026-05-30"
 title: "Add Pickup Domestic Inbound and Outbound approval workflows"
 repo: len-approval-api
+additions: 4125
+deletions: 19
 product:
   - backend
 ---

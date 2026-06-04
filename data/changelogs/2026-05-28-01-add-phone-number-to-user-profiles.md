@@ -2,6 +2,8 @@
 date: "2026-05-28"
 title: "Add phone number to user profiles"
 repo: len-approval-ui
+additions: 76
+deletions: 23
 product:
   - web
 ---

@@ -2,6 +2,8 @@
 date: "2026-05-27"
 title: "Expand WhatsApp templates to cover full approval lifecycle"
 repo: len-approval-ui
+additions: 256
+deletions: 131
 product:
   - web
 ---

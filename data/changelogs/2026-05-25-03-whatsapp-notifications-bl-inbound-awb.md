@@ -4,6 +4,8 @@ title: "WhatsApp notifications for BL form outcomes and BL Inbound AWB tracking"
 repo: len-approval-api
 product:
   - backend
+deletions: 6497
+additions: 3777
 ---
 
 - **WhatsApp notifications on approval outcomes:** When a BL inbound or BL outbound form is approved, rejected, or sent back for revision, designated recipients now receive a WhatsApp message with the form number and a direct link

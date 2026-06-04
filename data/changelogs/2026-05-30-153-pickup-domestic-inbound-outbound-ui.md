@@ -2,6 +2,8 @@
 date: "2026-05-30"
 title: "Add Pickup Domestic Inbound and Outbound form pages to dashboard"
 repo: len-approval-ui
+additions: 3189
+deletions: 11
 product:
   - web
 ---

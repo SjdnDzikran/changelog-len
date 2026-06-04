@@ -4,6 +4,8 @@ title: "Homepage redesigned with new hero section and refined layout"
 repo: len-react
 product:
   - web
+deletions: 174
+additions: 252
 ---
 
 - The homepage hero now features a full-viewport background image with a concise headline and direct call-to-action buttons for getting a quote or tracing a shipment.

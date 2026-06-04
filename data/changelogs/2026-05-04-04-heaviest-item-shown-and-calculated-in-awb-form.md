@@ -4,6 +4,8 @@ title: "Heaviest item weight displayed on AWB forms"
 repo: erp-len-ui
 product:
   - web
+additions: 11
+deletions: 0
 ---
 
 - The add and edit AWB forms now calculate and display the heaviest item weight based on the item list entered.

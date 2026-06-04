@@ -2,6 +2,8 @@
 date: "2026-06-01"
 title: "Excel editing and automatic TMS sync for BL Inbound final approval"
 repo: len-approval-api
+additions: 447
+deletions: 16
 product:
   - backend
   - web

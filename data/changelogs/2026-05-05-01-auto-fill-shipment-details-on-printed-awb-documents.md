@@ -4,6 +4,8 @@ title: "Auto-fill shipment weight and dimensions on printed AWB documents"
 repo: erp-len-api
 product:
   - backend
+deletions: 10
+additions: 8
 ---
 
 Printed AWB (Air Waybill) documents now display shipment weight, koli count, and volume directly from the system when those values are available. Previously, these fields were always left blank on the printed document, requiring staff to fill them in by hand for every shipment.

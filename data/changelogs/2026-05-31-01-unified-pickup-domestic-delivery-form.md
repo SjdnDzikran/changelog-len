@@ -2,6 +2,8 @@
 date: "2026-05-31"
 title: "Consolidate Pickup Domestic into a single unified form"
 repo: len-approval-api
+additions: 1299
+deletions: 2650
 product:
   - backend
   - web

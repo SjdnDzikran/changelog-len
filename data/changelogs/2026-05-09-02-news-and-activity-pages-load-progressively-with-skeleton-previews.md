@@ -4,6 +4,8 @@ title: "News and activity pages now load progressively with preview placeholders
 repo: len-react
 product:
   - web
+deletions: 101
+additions: 186
 ---
 
 The News and Activity pages on the company website now show animated skeleton placeholders while content loads, giving visitors immediate visual feedback instead of a blank screen.

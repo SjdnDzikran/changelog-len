@@ -4,6 +4,8 @@ title: "Add missing plant codes for Warehouse 6 BL operations"
 repo: api-wms
 product:
   - backend
+deletions: 1
+additions: 118
 ---
 
 - **25 new plant codes registered:** BL operations in Warehouse 6 (Banjarmasin) now accept plant codes covering major cities across Kalimantan and Sumatra, including Surabaya, Muara Enim, Samarinda, Aceh, Balikpapan, and others

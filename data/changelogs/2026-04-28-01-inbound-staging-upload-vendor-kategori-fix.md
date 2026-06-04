@@ -4,6 +4,8 @@ title: "Inbound staging upload now matches rows by Vendor and KategoriProdukMate
 repo: api-wms
 product:
   - backend
+deletions: 2
+additions: 289
 ---
 
 Fixed a data integrity issue in the inbound staging upload service where the `UPDATE` statement used to link staging rows to `inbound_items` did not include `Vendor` and `KategoriProdukMaterial` in its `WHERE` clause.

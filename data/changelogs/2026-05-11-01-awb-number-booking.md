@@ -2,6 +2,8 @@
 date: "2026-05-11"
 title: "Reserve AWB numbers before shipment details are ready"
 repo: erp-len-api
+additions: 583
+deletions: 73
 product:
   - backend
 ---

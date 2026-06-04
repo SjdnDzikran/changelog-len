@@ -4,6 +4,8 @@ title: "Add loading spinners and smooth transitions to image previews"
 repo: len-react
 product:
   - web
+deletions: 3
+additions: 55
 ---
 
 Image preview dialogs now show a loading spinner while photos load and fade in smoothly once ready, replacing the previous behavior where images would abruptly appear.

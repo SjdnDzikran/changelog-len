@@ -2,6 +2,8 @@
 date: "2026-06-02"
 title: "Fix BL Outbound approval notifications to open form page in browser"
 repo: len-approval-api
+additions: 6
+deletions: 6
 product:
   - backend
 ---

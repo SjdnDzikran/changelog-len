@@ -4,6 +4,8 @@ title: "Add admin pages for managing packaging content"
 repo: erp-len-ui
 product:
   - web
+deletions: 1
+additions: 1080
 ---
 
 - **Packaging list page:** A searchable, sortable table at `/cms/packagings` shows all packaging entries with color-coded status badges (Draft/Published), last modified date, and quick-action buttons for viewing, editing, publishing, unpublishing, and deleting

@@ -2,6 +2,8 @@
 date: "2026-05-28"
 title: "Strengthen BL Inbound approval with TMS integration"
 repo: len-approval-api
+additions: 642
+deletions: 40
 product:
   - backend
 ---

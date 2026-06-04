@@ -4,6 +4,8 @@ title: "CMS Activities Management API"
 repo: erp-len-api
 product:
   - backend
+deletions: 2
+additions: 1092
 ---
 
 Added a complete backend module for managing company activities (news, events) for public listing on the website. Includes:

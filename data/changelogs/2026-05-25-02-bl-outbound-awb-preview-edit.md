@@ -4,6 +4,8 @@ title: "BL outbound workflow redesign with AWB preview, edit, and copy-to-Excel"
 repo: ui-wms
 product:
   - web
+deletions: 26553
+additions: 1165
 ---
 
 - **Preview by AWB:** A new modal lets warehouse staff search and view all inventory items for a specific AWB, then select items directly for the outbound

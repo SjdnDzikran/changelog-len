@@ -4,6 +4,8 @@ title: "Modal forms now display validation errors via MudAlert"
 repo: erp-len-ui
 product:
   - web
+deletions: 23
+additions: 59
 ---
 
 Improved the Create User modal and all entity edit modals to properly display client-side validation errors.

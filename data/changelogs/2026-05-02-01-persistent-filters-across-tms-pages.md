@@ -4,6 +4,8 @@ title: "Keep search and filter settings when navigating between list and detail 
 repo: erp-len-ui
 product:
   - web
+deletions: 256
+additions: 128
 ---
 
 Users who filter an AWB, Booking, Manifest, DRS, or Inbound list and then open a record will no longer lose their filters when going back. Previously, returning from a detail or edit page would reset the entire list, forcing users to re-enter search terms and re-apply every filter. Now the active filters are saved to the browser URL, so the list automatically reloads with the same view.

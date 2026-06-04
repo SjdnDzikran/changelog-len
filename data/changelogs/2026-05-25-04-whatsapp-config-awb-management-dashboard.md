@@ -4,6 +4,8 @@ title: "WhatsApp configuration pages, BL Inbound AWB management, and dashboard i
 repo: len-approval-ui
 product:
   - web
+deletions: 210
+additions: 1720
 ---
 
 - **WhatsApp Recipient Lists:** New admin page to create, edit, and manage named lists of WhatsApp contacts for routing approval notifications

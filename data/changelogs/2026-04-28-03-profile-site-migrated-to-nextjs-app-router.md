@@ -4,6 +4,8 @@ title: "Profile website migrated from Vite to Next.js App Router"
 repo: len-react
 product:
   - web
+deletions: 21740
+additions: 8459
 ---
 
 The LEN Logistics public-facing profile website has been rewritten from Vite/React to Next.js App Router.

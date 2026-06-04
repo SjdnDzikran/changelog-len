@@ -2,6 +2,8 @@
 date: "2026-05-30"
 title: "Move required AWB columns to the front of data entry tables"
 repo: len-approval-ui
+additions: 28
+deletions: 23
 product:
   - web
 ---

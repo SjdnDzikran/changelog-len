@@ -2,6 +2,8 @@
 date: "2026-06-01"
 title: "Copy all AWB preview rows to Excel across all pages"
 repo: ui-wms
+additions: 93
+deletions: 18
 product:
   - web
 ---

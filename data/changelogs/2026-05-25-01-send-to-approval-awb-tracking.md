@@ -4,6 +4,8 @@ title: "Redesign BL outbound approval workflow with AWB tracking and expanded sh
 repo: api-wms
 product:
   - backend
+deletions: 0
+additions: 4
 ---
 
 - **Manual "Send to Approval" replaces automatic sync:** Outbound forms are no longer pushed to Approval automatically when staff upload the Excel file. Warehouse staff can now review, edit, and validate all required fields at their own pace before manually submitting, preventing incomplete data from reaching the approval queue

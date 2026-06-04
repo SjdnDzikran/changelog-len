@@ -4,6 +4,8 @@ title: "Redesign manifest dispatch notification email"
 repo: erp-len-api
 product:
   - backend
+deletions: 190
+additions: 253
 ---
 
 The notification email sent when a manifest is dispatched has been completely redesigned with a new layout that puts the most important information front and center.

@@ -2,6 +2,8 @@
 date: "2026-06-01"
 title: "Multi-step Origin, Moda, and AWB data entry for BL Inbound forms"
 repo: len-approval-api
+additions: 302
+deletions: 26
 product:
   - backend
   - web

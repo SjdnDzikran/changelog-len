@@ -2,6 +2,8 @@
 date: "2026-05-28"
 title: "Edit BL Inbound items at final approval step"
 repo: len-approval-ui
+additions: 406
+deletions: 8
 product:
   - web
 ---

@@ -2,6 +2,8 @@
 date: "2026-05-18"
 title: "Show live packaging content on the Activity page"
 repo: len-react
+additions: 140
+deletions: 46
 product:
   - web
 ---

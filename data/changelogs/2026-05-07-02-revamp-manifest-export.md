@@ -4,6 +4,8 @@ title: "Split manifest export into organized multi-sheet workbook"
 repo: erp-len-api
 product:
   - backend
+deletions: 15
+additions: 238
 ---
 
 Manifest exports now generate a single Excel workbook with **three dedicated sheets** instead of one flat table:

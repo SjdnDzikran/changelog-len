@@ -4,6 +4,8 @@ title: "Add Pelita Air, Nam Air, and Rimbun Air as flight partners"
 repo: len-react
 product:
   - web
+deletions: 1
+additions: 4
 ---
 
 - **Three new partner banners:** Pelita Air, Nam Air, and Rimbun Air logos are now displayed in the flight partners section of the company profile website

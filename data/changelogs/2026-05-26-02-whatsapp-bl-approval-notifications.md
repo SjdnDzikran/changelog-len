@@ -2,6 +2,8 @@
 date: "2026-05-26"
 title: "Send WhatsApp notifications for BL approval workflows"
 repo: len-approval-api
+additions: 265
+deletions: 117
 product:
   - backend
 ---

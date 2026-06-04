@@ -4,6 +4,8 @@ title: "Switch CMS articles and activities to paginated tables"
 repo: erp-len-ui
 product:
   - web
+deletions: 481
+additions: 599
 ---
 
 The **Articles** and **Activities** management pages now use paginated tables instead of card grids, making them faster and easier to navigate when content grows.
