@@ -41,14 +41,14 @@ function DayDiffStats({ day }: { day: ChangelogDayType }) {
           <span
             key={`g${i}`}
             className="inline-block"
-            style={{ width: 8, height: 8, backgroundColor: "rgb(31, 136, 61)", marginLeft: 1 }}
+            style={{ width: 8, height: 8, backgroundColor: "rgb(31, 136, 61)", marginLeft: 1, borderRadius: 2 }}
           />
         ))}
         {Array.from({ length: redCount }).map((_, i) => (
           <span
             key={`r${i}`}
             className="inline-block"
-            style={{ width: 8, height: 8, backgroundColor: "rgba(129, 139, 152, 0.12)", marginLeft: 1 }}
+            style={{ width: 8, height: 8, backgroundColor: "rgba(129, 139, 152, 0.12)", marginLeft: 1, borderRadius: 2 }}
           />
         ))}
       </span>
