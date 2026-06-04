@@ -15,6 +15,39 @@ function formatDate(dateStr: string): string {
   });
 }
 
+function formatNumber(n: number): string {
+  if (n >= 1000) return `${(n / 1000).toFixed(1)}k`;
+  return n.toString();
+}
+
+function DayDiffStats({ day }: { day: ChangelogDayType }) {
+  const totalAdditions = day.entries.reduce((sum, e) => sum + (e.additions ?? 0), 0);
+  const totalDeletions = day.entries.reduce((sum, e) => sum + (e.deletions ?? 0), 0);
+  const total = totalAdditions + totalDeletions;
+
+  if (total === 0) return null;
+
+  const additionsPercent = total > 0 ? (totalAdditions / total) * 100 : 50;
+  const deletionsPercent = total > 0 ? (totalDeletions / total) * 100 : 50;
+
+  return (
+    <div className="flex items-center gap-2 text-xs text-black/50 mt-1">
+      <span className="text-[#1a7f37] font-medium">+{formatNumber(totalAdditions)}</span>
+      <span className="text-[#cf222e] font-medium">-{formatNumber(totalDeletions)}</span>
+      <div className="h-2 w-16 rounded-full overflow-hidden bg-gray-200 flex">
+        <div
+          className="h-full bg-[#1a7f37]"
+          style={{ width: `${additionsPercent}%` }}
+        />
+        <div
+          className="h-full bg-[#cf222e]"
+          style={{ width: `${deletionsPercent}%` }}
+        />
+      </div>
+    </div>
+  );
+}
+
 function ProductBadges({ product }: { product: ("mobile" | "web" | "backend")[] }) {
   const config = {
     mobile: { label: "📱 Mobile", className: "bg-blue-50 text-blue-700" },
@@ -70,14 +103,18 @@ function ReleaseRow({ day }: { day: ChangelogDayType }) {
         <time className="text-base text-black/60 font-normal">
           {formatDate(day.date)}
         </time>
+        <DayDiffStats day={day} />
       </div>
 
       {/* Right: All entries for this day */}
       <div>
-        {/* Mobile-only date (shown inline above first entry) */}
-        <time className="text-sm text-black/50 font-normal mb-3 block md:hidden">
+        {/* Mobile-only date + diff stats (shown inline above first entry) */}
+        <time className="text-sm text-black/50 font-normal mb-1 block md:hidden">
           {formatDate(day.date)}
         </time>
+        <div className="mb-3 md:hidden">
+          <DayDiffStats day={day} />
+        </div>
         {day.entries.map((entry, i) => (
           <div key={entry.id} className={i < day.entries.length - 1 ? "pb-12 md:pb-16" : "pb-0"}>
             <div className="mb-2 flex items-center gap-1.5 flex-wrap">

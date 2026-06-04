@@ -79,6 +79,8 @@ function readAllDays(): ChangelogDay[] {
       date,
       imageUrl: data.image as string | undefined,
       published: true,
+      additions: (data.additions as number) ?? undefined,
+      deletions: (data.deletions as number) ?? undefined,
     };
 
     if (!entryMap.has(date)) {

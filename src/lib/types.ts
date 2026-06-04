@@ -10,6 +10,8 @@ export interface ChangelogEntry {
   date: string; // YYYY-MM-DD
   imageUrl?: string;
   published: boolean;
+  additions?: number;
+  deletions?: number;
 }
 
 export interface ChangelogDay {
