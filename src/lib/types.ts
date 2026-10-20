@@ -1,5 +1,5 @@
 export type ChangelogProduct = "mobile" | "web" | "backend";
-export type ChangelogRepo = "api-wms" | "ui-wms" | "erp-len-api" | "erp-len-ui" | "len-app" | "len-react" | "len-approval-api" | "len-approval-ui";
+export type ChangelogRepo = "api-wms" | "ui-wms" | "erp-len-api" | "erp-len-ui" | "len-app" | "len-react" | "len-approval-api" | "len-approval-ui" | "len-attendance";
 
 export interface ChangelogEntry {
   id: string;

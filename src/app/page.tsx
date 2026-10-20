@@ -89,7 +89,7 @@ function ProductBadges({ product }: { product: ("mobile" | "web" | "backend")[] 
   );
 }
 
-function RepoBadge({ repo }: { repo: "api-wms" | "ui-wms" | "erp-len-api" | "erp-len-ui" | "len-app" | "len-react" | "len-approval-api" | "len-approval-ui" }) {
+function RepoBadge({ repo }: { repo: "api-wms" | "ui-wms" | "erp-len-api" | "erp-len-ui" | "len-app" | "len-react" | "len-approval-api" | "len-approval-ui" | "len-attendance" }) {
   const config = {
     "api-wms": { label: "WMS", className: "bg-gray-100 text-gray-700" },
     "ui-wms": { label: "WMS", className: "bg-gray-100 text-gray-700" },
@@ -99,6 +99,7 @@ function RepoBadge({ repo }: { repo: "api-wms" | "ui-wms" | "erp-len-api" | "erp
     "len-react": { label: "Profile", className: "bg-gray-100 text-gray-700" },
     "len-approval-api": { label: "Approval", className: "bg-gray-100 text-gray-700" },
     "len-approval-ui": { label: "Approval", className: "bg-gray-100 text-gray-700" },
+    "len-attendance": { label: "Attendance", className: "bg-gray-100 text-gray-700" },
   };
   const { label, className } = config[repo];
   return (
